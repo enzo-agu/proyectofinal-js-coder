@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarse</title>
+  
+  <link rel="stylesheet" href="./css/miestilo.css">
+</head>
+<body>
+  <header>
+    <div class="formularioRegistrar" id="login-div">
+      <form class="formularioRegistrar text-primary mb-3" id="myform" onsubmit="registrarCompetidor(event)">
+        <fieldset>
+          <legend>Registrate!</legend> <br>
+          <h4>Ingrese su email</h4> <input type="email" name="email" value="" required> <br> <br>
+          <h4>Ingrese su password</h4> <input type="password" name="password" value="" required> <br> <br>
+          <h4>Ingrese su nombre</h4> <label for="nombre"></label> <input type="text" id="txtName" name="nombre" required> <br>
+          <br>
+          <h4>Ingrese su apellido</h4> <input type="text" name="apellido" value="" required> <br> <br>
+          <h4>Ingrese su edad</h4> <input type="number" name="edad" value="" required> <br> <br>
+          <h4>Ingrese su cinturon</h4>
+          <select name="faixas" >
+            <option value="Blanco"> Blanco</option>
+            <option value="Azul"> Azul</option>
+            <option value="Morado"> Morado</option>
+            <option value="Marron"> Marron</option>
+            <option value="Negro"> Negro</option>
+          </select> <br> <br>
+          <div>Categorias</div>
+          <select name="categorias">
+            <option>No hay categorías menores a 48kg.</option>
+              <option value="Paja">Paja</option>
+              <option value="Mosca">Mosca</option>
+              <option value="Gallo">Gallo</option>
+              <option value="Pluma"> Pluma</option>
+              <option value="Liviano"> Liviano</option>
+              <option value="Welter"> Welter</option>
+              <option value="Mediano-pesado"> Mediano</option>
+              <option value="Pesado">Mediano-Pesado</option>
+              <option value="Pesadisimo"> Pesado</option>
+              <option value="Ultrapesadisimo">Pesadisimo</option>
+          </select> <br> <br>
+          <div id="categorias"></div>
+          <div>Sexo</div> <input type="radio" id="male" name="gender" value="male"> <label
+            for="male">Masculino</label> <input type="radio" id="female" name="gender" value="female"> <label
+            for="female">Femenino</label>
+        </fieldset>
+        <h4>Comentarios:</h4> <textarea name="comentarios" value=""></textarea> <br><br> 
+        <input type="submit" name="registrar" value="Registrar">
+        <button><a href="index.html">Volver</a></button>
+      </form>
+    </div>
+  <script src="./logueo/login.js"></script>
+  <script src="./categorias/categorias.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

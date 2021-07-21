@@ -1,0 +1,19 @@
+$marron: rgba(47, 23, 15, 0.9);
+
+
+$ancho:250px;
+
+
+@mixin seccion-pagina ($margen,$fondo){
+
+	margin-top: $margen;
+	margin-bottom: $fondo;
+}
+
+.pagina__seccion{
+
+	@include seccion-pagina(5rem,5rem);
+
+}
+
+$azul:#0E64A6;

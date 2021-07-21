@@ -1,0 +1,32 @@
+.navbar__botonlogo--color:hover {
+	
+	border:solid 1px #A3191F;
+}
+
+
+.navbar__Imagen--ancho{
+
+	width:$ancho;
+}
+
+.navbar__FotoLogo--transicion {
+	transition:3s;
+
+}
+
+.navbar__FotoLogo--transicion:hover{
+
+ width: 300px;
+ height: 150px;
+
+}
+
+
+
+.nav-link{color:rgba(255,255,255,.7);font-weight:800}
+
+.navbar-nav .nav-item.active .nav-link{color:#e6a756}
+
+#mainNav{background-color:rgba(47,23,15,.9);font-family:Raleway }
+
+#mainNav .navbar-nav .nav-item .nav-link{font-size:.9rem}

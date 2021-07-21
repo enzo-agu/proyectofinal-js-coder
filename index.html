@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Brazilian jiu jitsu, artes marciales,valetodo, nueva union,academia,deportes ">
+  <meta name="author" content="">
+  <title>Nueva Union BJJ</title>
+
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./css/miestilo.css">
+
+
+
+</head>
+
+<body>
+  <div id="color1">
+    <div id="login-div">
+      <form id='login' onsubmit="login(event)">
+        <label class="text-primary mb-3" for="email">Email: </label> <input type="email" name="email" id="email"
+          required>
+        <label class="text-primary mb-3" for="email">Password: </label> <input type="password" name="password"
+          id="password" required>
+        <input type="submit" value="Iniciar sesion">
+        <button id="register-div"><a href="registrar.html">Registrarse</a></button>
+      </form>
+    </div>
+    <div id="logged-user" hidden="true">
+      <h4 class="site__heading--upper text-primary mb-3" id='user-name'></h4>
+      <button onclick="cerrarSesion(event)">Cerrar sesion</button>
+    </div>
+  </div>
+
+  <h1 class="site__heading text-center text-white d-none d-lg-block">
+    <span id="tituloPrincipal" class="site__heading--upper text-primary mb-3"></span>
+    <span id="subtituloPrincipal" class="site__heading-lower">Brazilian jiu jitsu</span>
+  </h1>
+
+  <!----------Navegacion----->
+  <!------------------------->
+  <!------------------------->
+
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+
+    <div id="DIV" class="container">
+
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">
+        <img width="100" height="60" src="./img/imagenlogo1.jpg" alt="logo pequeño de la academia">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+        <img width="auto" height="auto" src="./img/imagenlogogrande.png" alt="logo grande de la academia en menu ">
+
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="que es.html">Que es
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="graduaciones.html">Graduaciones</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="torneos.html">Torneos</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="entrenaconnosotros.html">Entrena con nosotros</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!---------------------------------->
+  <!---------------------------------->
+  <!----------Fin Navegacion---------->
+
+
+
+  <!----------Seccion 1---------->
+  <!----------------------------->
+  <!----------------------------->
+
+  <section class="pagina__seccion clearfix">
+
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/lucha-bjj.png" alt="lucha de jiu jitsu">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-lower">JIU JITSU BRASILERO</span>
+            <span class="section-heading-upper">Un estilo de vida</span>
+          </h2>
+          <p class="mb-3">Deporte de contacto, basado en tecnicas de agarre y derribos en el que se busca la sumision o
+            rendicion del oponente a traves de palancas de brazos,piernas y estrangulaciones.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--------------------------------->
+  <!--------------------------------->
+  <!----------Fin seccion 1---------->
+
+
+
+  <!----------Seccion 2---------->
+  <!----------------------------->
+  <!----------------------------->
+
+  <section class="pagina__seccion cta">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper"></span>
+              <span class="section-heading-upper">Algunos beneficios</span>
+            </h2>
+            <p class="mb-0">Defensa personal, elevacion del autoestima, seguridad fisica y mental, maximiza la
+              resistencia cardiorespiratoria, aumento de potencia y resistencia muscular.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--------------------------------->
+  <!--------------------------------->
+  <!----------Fin seccion 2---------->
+
+
+
+  <!----------Pie de pagina---------->
+  <!--------------------------------->
+  <!--------------------------------->
+
+  <footer class="footer text__faded text-center py-5">
+
+
+    <!--------------------------------------------->
+    <!--------------------------------------------->
+    <!----------Bootstrap core JavaScript---------->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <div id="torneo-div">
+      <div class="container mt-3">
+        <h1 class="site__heading--upper text-primary mb-3">Proximo torneo</h1>
+        <h3 id='torneo-nombre' class="site__heading--upper text-primary mb-3"></h3>
+        <h3 id='torneo-lugar' class="site__heading--upper text-primary mb-3"></h3>
+        <h3 id='torneo-fecha' class="site__heading--upper text-primary mb-3"></h3>
+        <h3 id='torneo-hora' class="site__heading--upper text-primary mb-3"></h3>
+        <h3 id='torneo-categoria' class="site__heading--upper text-primary mb-3"></h3>
+        <h3 id='torneo-faixa' class="site__heading--upper text-primary mb-3"></h3>
+        <br>
+        <button onclick="registrarATorneo(event)">Inscribirse</button>
+        <button onclick="cancelarInscripcion(event)">Cancelar inscripción</button>
+      </div>
+    </div>
+
+  </footer>
+
+  <!------------------------------------->
+  <!------------------------------------->
+  <!----------Fin pie de pagina---------->
+  <script src="./logueo/login.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="./jQuery/jQuery.js"></script>
+ 
+  <!--<script src="./buttonsJs/buttonsDom.js"></script>
+
+
+
+
+</body>
+
+</html>

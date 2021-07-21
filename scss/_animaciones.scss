@@ -1,0 +1,25 @@
+.header__TituloPrincipal--Animacion{
+
+	animation-duration: 2s;
+	animation-name: aparecer;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes aparecer{
+
+	0% {
+		opacity: 0;
+	}
+	100%{
+		opacity: 2;
+	}
+}
+
+
+.seccion__FotoLucha--rotacion{
+
+	transform: rotate(-4deg);
+}
+
+
